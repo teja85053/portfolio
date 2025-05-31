@@ -1,5 +1,6 @@
 {
   "name": "portfolio",
+  "homepage": "https://teja85053.github.io/portfolio/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,10 +8,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
+    "gh-pages": "^6.3.0",
     "lucide-react": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
